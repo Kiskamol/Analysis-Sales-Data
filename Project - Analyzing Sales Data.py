@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# -- Project --
-
-# # Project - Analyzing Sales Data
-# 
-# **Date**: 30 December 2021
-# 
-# **Author**: Kiskamol Kulpradith
-
-
 # import data
 import pandas as pd
 df = pd.read_csv("sample-store.csv")
