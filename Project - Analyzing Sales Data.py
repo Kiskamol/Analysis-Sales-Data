@@ -47,7 +47,7 @@ f'rows->{df.shape}<-columns'
 # is there any missing values?, if there is, which colunm? how many nan values?
 df.isna().sum() 
 
-# TODO 03 - your friend ask for `California` data, filter it and export csv for him
+#  `California` data, filter it to csv 
 california_data = df.query('State == "California"').reset_index()
 california_data.to_csv('california_data.csv')
 
