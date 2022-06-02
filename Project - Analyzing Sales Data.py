@@ -51,7 +51,7 @@ df.isna().sum()
 california_data = df.query('State == "California"').reset_index()
 california_data.to_csv('california_data.csv')
 
-# TODO 04 - your friend ask for all order data in `California` and `Texas` in 2017 (look at Order Date), send him csv file
+# all order data in `California` and `Texas` in 2017 (look at Order Date), in csv file
 df['Order_Year'] = pd.DatetimeIndex(df['Order Date']).year
 df.query('State == ["California","Texas"]  & Order_Year == 2017')
 
